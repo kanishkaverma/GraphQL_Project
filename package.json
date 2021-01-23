@@ -1,0 +1,47 @@
+{
+  "name": "GraphQL_Project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "dev": "nodemon dist/index.js",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanishkaverma/GraphQL_Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kanishkaverma/GraphQL_Project/issues"
+  },
+  "homepage": "https://github.com/kanishkaverma/GraphQL_Project#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.22",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "@mikro-orm/cli": "^4.3.4",
+    "@mikro-orm/core": "^4.3.4",
+    "@mikro-orm/migrations": "^4.3.4",
+    "@mikro-orm/postgresql": "^4.3.4",
+    "apollo-server-express": "^2.19.2",
+    "express": "^4.17.1",
+    "graphql": "^15.4.0",
+    "nodemon": "^2.0.7",
+    "pg": "^8.5.1",
+    "type-graphql": "^1.1.1"
+  },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./dist/mikro-orm.config.js"
+    ]
+  }
+}
